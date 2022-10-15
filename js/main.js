@@ -1,7 +1,3 @@
-
-
-
-// Fixed Navigation Bar all over the page
 $(window).scroll(() => {
   var scroll = $(window).scrollTop();
 
@@ -15,13 +11,11 @@ $(window).scroll(() => {
   }
 });
 
-// Main SWIPER Start
 var swiper = new Swiper(".mainSwiper", {
   autoplay: {
     delay: 2000,
   },
 
-  // Responsive breakpoints
   breakpoints: {
     // when window width is >= 480px
     480: {
@@ -51,12 +45,8 @@ var swiper = new Swiper(".mainSwiper", {
     clickable: true,
   },
 });
-// Main SWIPER Ends
 
 
-
-
-/* PC Search Form Start */
 $(document).ready(function () {
   $(".fire-search").on("click", () => {
     $("#search").addClass("open");
@@ -72,9 +62,7 @@ $(document).ready(function () {
     }
   });
 });
-/* PC Search Form Ends */
 
-// To categorize product list via Data Attribute
 $(document).on("click", ".cat-name-button", function (e) {
   var type = $(this).data("cat-name");
   $(".cat-name-button").removeClass("active");
@@ -104,9 +92,7 @@ $('.product-details_btn.menu-close_btn').click((e)=>{
 })
 
 
-// Gallery SWIPER Start
 var swiper = new Swiper(".gallerySwiper", {
-  // Responsive breakpoints
   breakpoints: {
     // when window width is >= 480px
     480: {
@@ -134,4 +120,3 @@ var swiper = new Swiper(".gallerySwiper", {
 
   loop: true,
 });
-// Gallery SWIPER Ends
